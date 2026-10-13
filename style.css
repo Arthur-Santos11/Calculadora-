@@ -1,0 +1,125 @@
+*{
+  box-sizing: border-box;
+}
+
+
+main{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(53,53,48);
+  width: 400px;
+  height: 700px;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+.visor{
+  
+  background-color: rgba(56,192,56, 0.4);
+  border: 5px inset rgb(15,15,15);
+  text-align: right;
+  font-size:30px;
+  padding-right: 20px;
+  height: 80px;
+  font-family: 'Digital-7', monospace;
+  
+}
+
+
+.botoes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.btn{
+  
+  font-family: Arial;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  flex:  0 0 85px;
+  text-align: center;
+  
+  background: linear-gradient(135deg , rgb(58,57,57) , rgb(28,25,25) );
+  border-radius: 10px;
+  border: solid 1px rgba(0,0,0,0.651);
+  
+  box-shadow: 5px 15px 35px rgba(0,0,0,0.655);
+  border-right: solid 2 px rgba(89,79,79, 0.797);
+  border-top: solid 2px rgba(87,78,78, 0.82);
+  
+}
+
+
+.btn:active{
+  
+  cursor: pointer;
+  transition: 0.3s;
+  
+  background: radial-gradient( circle,
+    rgb(56,55,55),
+    rgb(58,58,58),
+    rgb(39,39,39),
+    rgb(36,36,36),) ;
+  
+  border: solid 2px rgba(35,31,31, 0.737);
+  box-shadow: 0px 0px 35px rgb(24,24,24);
+  
+  
+}
+
+.visor:hover{
+  
+  transition: 0.3s;
+  background: rgba(55,198,55,0.777);
+  
+}
+
+#mais{
+  background: rgb(24,17,119);
+  border-right: solid 2px rgba(42,21,101, 0.797);
+  border-top: solid 2px rgba(31,31,153, 0.82);
+}
+
+#mais:active{
+  
+  
+  cursor: pointer;
+  transition: 0.3s;
+  background: radial-gradient( circle,
+  
+  rgba(39,30,164, 0.76),
+  rgb(24,17,119),
+  rgb(16,13,77));
+  
+  border:solid 2px rgba(11,12,63,0.737);  
+    
+  }
+  
+#delete{
+  
+  background: rgb(85,19,9);
+  border-right: solid 2 px rgba(59,22,9,0.797) ;
+  border-top: solid 2px rgba(71,19,10, 0.82);
+  
+}  
+
+
+#delete:active {
+  
+  cursor: pointer;
+  transition: 0.3s;
+  background: radial-gradient(circle,
+    rgba(137,14,0.76),
+    rgb(113,25,9),
+    rgb(68,13,8));
+  
+  border: solid 2px rgba(103, 25, 13, 0.737);
+  box-shadow: 0px 0px 35px rgb(61,6,5);
+}
